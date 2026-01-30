@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'views/home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Lume Pocket',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Lume Pocket'),
-        ),
-        body: const Center(
-          child: Text('App inicializado'),
-        ),
-      ),
+      home: const HomeView(),
     );
   }
 }
