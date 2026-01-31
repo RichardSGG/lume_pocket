@@ -23,16 +23,30 @@ class _HomeViewState extends State<HomeView> {
       appBar: AppBar(
         title: const Text('Lume Pocket'),
       ),
-      body: ListView.builder(
-        itemCount: _viewModel.tasks.length,
-        itemBuilder: (context, index) {
-          final task = _viewModel.tasks[index];
-          return ListTile(
-            title: Text(task.title),
-            subtitle: Text(task.description),
-          );
-        },
-      ),
+  
+     body: AnimatedBuilder(
+    animation: _viewModel,
+   builder: (context, child) {
+    return ListView.builder(
+      itemCount: _viewModel.tasks.length,
+      itemBuilder: (context, index) {
+        final task = _viewModel.tasks[index];
+        return ListTile(
+          leading: const Icon(Icons.check_circle_outline),
+          title: Text(task.title),
+          subtitle: Text(task.description),
+        );
+      },
     );
-  }
-}
+  },
+),
+
+floatingActionButton: FloatingActionButton(
+  onPressed: () {
+    _viewModel.addTask(
+      'Nova Tarefa ${_viewModel.tasks.length + 1}',
+      'Descrição da tarefa',
+    );
+  },
+  child: const Icon(Icons.add),
+),
