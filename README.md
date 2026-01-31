@@ -32,7 +32,10 @@ flutter run
 
 O APK está disponível para download via Google Drive:
 
-[🔗 Baixar app-arm64-v8a-release.apk](https://drive.google.com/...)
+[🔗 Baixar app-arm64-v8a-release.apk](https://drive.google.com/file/d/1biUe2bjFKtAS6IMNo0qULVws7t-DGFvI/view?usp=sharing)
+
+Ou escaneie o QR code:
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://drive.google.com/file/d/1biUe2bjFKtAS6IMNo0qULVws7t-DGFvI/view?usp=drive_link)
 
 **Instruções:**
 1. Baixe o arquivo no celular
