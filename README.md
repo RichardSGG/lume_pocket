@@ -1,16 +1,29 @@
-# lume_pocket
+# Lume Pocket
 
-A new Flutter project.
+Aplicativo simples de gerenciamento de tarefas desenvolvido em Flutter como parte de um desafio técnico.
 
-## Getting Started
+## Funcionalidades
+- Exibição de lista de tarefas
+- Adição de novas tarefas através de botão flutuante (FAB)
+- Navegação para tela de detalhes da tarefa
+- Gerenciamento de estado com ChangeNotifier
+- Arquitetura MVVM
 
-This project is a starting point for a Flutter application.
+## Estrutura do Projeto
+lib/
+├── models/
+│ └── task.dart
+├── viewmodels/
+│ └── task_viewmodel.dart
+├── views/
+│ ├── home_view.dart
+│ └── task_detail_view.dart
+└── main.dart
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como executar o projeto
+1. Instale o Flutter
+2. Clone o repositório
+3. Execute:
+```bash
+flutter pub get
+flutter run
