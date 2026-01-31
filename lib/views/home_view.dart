@@ -49,13 +49,14 @@ class _HomeViewState extends State<HomeView> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _viewModel.addTask(
-            'Nova Tarefa ${_viewModel.tasks.length + 1}',
-            'Descrição da tarefa',
-          );
-        },
-        child: const Icon(Icons.add),
+  onPressed: () {
+    _viewModel.addTask(
+      'Tarefa ${_viewModel.tasks.length + 1}',
+      'Nova tarefa adicionada',
+    );
+  },
+  backgroundColor: Colors.deepPurple,
+  child: const Icon(Icons.add, color: Colors.white),
       ),
     );
   }

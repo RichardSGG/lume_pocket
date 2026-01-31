@@ -13,6 +13,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Lume Pocket',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.white,
+        ),
+      ),
+
       home: const HomeView(),
     );
   }
