@@ -27,3 +27,14 @@ lib/
 ```bash
 flutter pub get
 flutter run
+
+## 📦 APK para Download
+
+O APK está disponível para download via Google Drive:
+
+[🔗 Baixar app-arm64-v8a-release.apk](https://drive.google.com/...)
+
+**Instruções:**
+1. Baixe o arquivo no celular
+2. Toque para instalar
+3. Permita "Fontes desconhecidas" se necessário
